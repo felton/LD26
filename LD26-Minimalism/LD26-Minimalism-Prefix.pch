@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'LD26-Minimalism' target in the 'LD26-Minimalism' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

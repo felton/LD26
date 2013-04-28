@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAA023C9172C4479009490CF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA023C8172C4479009490CF /* Cocoa.framework */; };
+		DAA023D3172C4479009490CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAA023D1172C4479009490CF /* InfoPlist.strings */; };
+		DAA023D9172C4479009490CF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DAA023D7172C4479009490CF /* Credits.rtf */; };
+		DAA023E6172C8402009490CF /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA023E5172C8402009490CF /* SDL.framework */; };
+		DAA023E9172C84E6009490CF /* SDLMain.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA023E8172C84E6009490CF /* SDLMain.m */; };
+		DAA023EC172C84F5009490CF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAA023EA172C84F5009490CF /* main.cpp */; };
+		DAA023EF172C86B4009490CF /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAA023ED172C86B4009490CF /* game.cpp */; };
+		DAA023F5172C9757009490CF /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAA023F3172C9757009490CF /* object.cpp */; };
+		DAA023F8172CBACE009490CF /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DAA023F6172CBACE009490CF /* input.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAA023C5172C4479009490CF /* LD26-Minimalism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LD26-Minimalism.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA023C8172C4479009490CF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DAA023CB172C4479009490CF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DAA023CC172C4479009490CF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DAA023CD172C4479009490CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAA023D0172C4479009490CF /* LD26-Minimalism-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LD26-Minimalism-Info.plist"; sourceTree = "<group>"; };
+		DAA023D2172C4479009490CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAA023D6172C4479009490CF /* LD26-Minimalism-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LD26-Minimalism-Prefix.pch"; sourceTree = "<group>"; };
+		DAA023D8172C4479009490CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DAA023E5172C8402009490CF /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL.framework; path = ../../../../../../Library/Frameworks/SDL.framework; sourceTree = "<group>"; };
+		DAA023E7172C84E6009490CF /* SDLMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDLMain.h; path = MacOS/SDLMain.h; sourceTree = SOURCE_ROOT; };
+		DAA023E8172C84E6009490CF /* SDLMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDLMain.m; path = MacOS/SDLMain.m; sourceTree = SOURCE_ROOT; };
+		DAA023EA172C84F5009490CF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Common/main.cpp; sourceTree = SOURCE_ROOT; };
+		DAA023EB172C84F5009490CF /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = Common/main.h; sourceTree = SOURCE_ROOT; };
+		DAA023ED172C86B4009490CF /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = Common/game.cpp; sourceTree = SOURCE_ROOT; };
+		DAA023EE172C86B4009490CF /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game.h; path = Common/game.h; sourceTree = SOURCE_ROOT; };
+		DAA023F3172C9757009490CF /* object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = object.cpp; sourceTree = "<group>"; };
+		DAA023F4172C9757009490CF /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		DAA023F6172CBACE009490CF /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = input.cpp; path = Common/input.cpp; sourceTree = SOURCE_ROOT; };
+		DAA023F7172CBACE009490CF /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = input.h; path = Common/input.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAA023C2172C4479009490CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA023E6172C8402009490CF /* SDL.framework in Frameworks */,
+				DAA023C9172C4479009490CF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAA023BC172C4479009490CF = {
+			isa = PBXGroup;
+			children = (
+				DAA023E5172C8402009490CF /* SDL.framework */,
+				DAA023CE172C4479009490CF /* LD26-Minimalism */,
+				DAA023C7172C4479009490CF /* Frameworks */,
+				DAA023C6172C4479009490CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAA023C6172C4479009490CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA023C5172C4479009490CF /* LD26-Minimalism.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAA023C7172C4479009490CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA023C8172C4479009490CF /* Cocoa.framework */,
+				DAA023CA172C4479009490CF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAA023CA172C4479009490CF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA023CB172C4479009490CF /* AppKit.framework */,
+				DAA023CC172C4479009490CF /* CoreData.framework */,
+				DAA023CD172C4479009490CF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DAA023CE172C4479009490CF /* LD26-Minimalism */ = {
+			isa = PBXGroup;
+			children = (
+				DAA023EA172C84F5009490CF /* main.cpp */,
+				DAA023EB172C84F5009490CF /* main.h */,
+				DAA023CF172C4479009490CF /* Supporting Files */,
+				DAA023ED172C86B4009490CF /* game.cpp */,
+				DAA023EE172C86B4009490CF /* game.h */,
+				DAA023F3172C9757009490CF /* object.cpp */,
+				DAA023F4172C9757009490CF /* object.h */,
+				DAA023F6172CBACE009490CF /* input.cpp */,
+				DAA023F7172CBACE009490CF /* input.h */,
+			);
+			path = "LD26-Minimalism";
+			sourceTree = "<group>";
+		};
+		DAA023CF172C4479009490CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAA023E8172C84E6009490CF /* SDLMain.m */,
+				DAA023E7172C84E6009490CF /* SDLMain.h */,
+				DAA023D0172C4479009490CF /* LD26-Minimalism-Info.plist */,
+				DAA023D1172C4479009490CF /* InfoPlist.strings */,
+				DAA023D6172C4479009490CF /* LD26-Minimalism-Prefix.pch */,
+				DAA023D7172C4479009490CF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA023C4172C4479009490CF /* LD26-Minimalism */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA023E2172C4479009490CF /* Build configuration list for PBXNativeTarget "LD26-Minimalism" */;
+			buildPhases = (
+				DAA023C1172C4479009490CF /* Sources */,
+				DAA023C2172C4479009490CF /* Frameworks */,
+				DAA023C3172C4479009490CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LD26-Minimalism";
+			productName = "LD26-Minimalism";
+			productReference = DAA023C5172C4479009490CF /* LD26-Minimalism.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAA023BD172C4479009490CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Felton Vaughn";
+			};
+			buildConfigurationList = DAA023C0172C4479009490CF /* Build configuration list for PBXProject "LD26-Minimalism" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAA023BC172C4479009490CF;
+			productRefGroup = DAA023C6172C4479009490CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA023C4172C4479009490CF /* LD26-Minimalism */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAA023C3172C4479009490CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA023D3172C4479009490CF /* InfoPlist.strings in Resources */,
+				DAA023D9172C4479009490CF /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAA023C1172C4479009490CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA023E9172C84E6009490CF /* SDLMain.m in Sources */,
+				DAA023EC172C84F5009490CF /* main.cpp in Sources */,
+				DAA023EF172C86B4009490CF /* game.cpp in Sources */,
+				DAA023F5172C9757009490CF /* object.cpp in Sources */,
+				DAA023F8172CBACE009490CF /* input.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAA023D1172C4479009490CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA023D2172C4479009490CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DAA023D7172C4479009490CF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA023D8172C4479009490CF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAA023E0172C4479009490CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DAA023E1172C4479009490CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DAA023E3172C4479009490CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LD26-Minimalism/LD26-Minimalism-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Library/Frameworks/SDL.framework/Headers/**";
+				INFOPLIST_FILE = "LD26-Minimalism/LD26-Minimalism-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAA023E4172C4479009490CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LD26-Minimalism/LD26-Minimalism-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Library/Frameworks/SDL.framework/Headers/**";
+				INFOPLIST_FILE = "LD26-Minimalism/LD26-Minimalism-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAA023C0172C4479009490CF /* Build configuration list for PBXProject "LD26-Minimalism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA023E0172C4479009490CF /* Debug */,
+				DAA023E1172C4479009490CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA023E2172C4479009490CF /* Build configuration list for PBXNativeTarget "LD26-Minimalism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA023E3172C4479009490CF /* Debug */,
+				DAA023E4172C4479009490CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAA023BD172C4479009490CF /* Project object */;
+}
